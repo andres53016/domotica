@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="resources/css/jquery.mobile-1.4.4.css">
+    <script src="resources/js/jquery.min.js"></script>
+    <script src="resources/js/jquery.mobile-1.4.4.min.js"></script>
+    <script>
+    var lala;
+    $(function() {
+        $( ".selector" ).bind( "change", function(event, ui) {
+            console.log(["cambio",event.target.id,event.target.value]);
+            lala=event;
+            $.ajax({
+                                type: "POST",
+                                url: "/ejecutar",
+                                data:{foco:event.target.id,estado:event.target.checked},
+                                success: function(datos) {
+                                   
+                                    
+                                }
+                            });
+        });
+        function update() {
+            $.ajax({
+                type: "POST",
+                    url: "/lee",
+                    data:{},
+                    success: function(datos) {
+                        console.log(datos)
+                        $("#puerta").prop("checked",datos["puerta"]).flipswitch("refresh");
+                        $("#ventanaCocina").prop("checked",datos["ventanaCocina"]).flipswitch("refresh");
+                        $("#ventanaDormitorio").prop("checked",datos["ventanaDormitorio"]).flipswitch("refresh");
+                        }
+            });
+        
+            setTimeout(update,1500);
+        }
+        update();
+        $.ajax({
+                type: "POST",
+                    url: "/lee",
+                    data:{},
+                    success: function(datos) {
+                        console.log(datos)
+                        $("#puerta").prop("checked",datos["puerta"]).flipswitch("refresh");
+                        $("#ventanaCocina").prop("checked",datos["ventanaCocina"]).flipswitch("refresh");
+                        $("#ventanaDormitorio").prop("checked",datos["ventanaDormitorio"]).flipswitch("refresh");
+                        $("#focoCocina").prop("checked",datos["focoCocina"]).flipswitch("refresh");
+                        $("#focoDormitorio").prop("checked",datos["focoDormitorio"]).flipswitch("refresh");
+                        $("#alarma").prop("checked",datos["alarma"]).flipswitch("refresh");
+                        }
+            });
+    });
+    
+    </script>
+    <style>
+       .custom-size-flipswitch.ui-flipswitch .ui-btn.ui-flipswitch-on {
+        text-indent: -5.9em;
+        }
+        .custom-size-flipswitch.ui-flipswitch .ui-flipswitch-off {
+            text-indent: 0.5em;
+        }
+        .custom-size-flipswitch.ui-flipswitch {
+            width: 8.875em;
+        }
+        .custom-size-flipswitch.ui-flipswitch.ui-flipswitch-active {
+            padding-left: 7em;
+            width: 1.875em;
+        }       
+
+    
+    </style>
+    
+  </head>
+  <body>
+    <div data-role="page" id="inicio">
+        <div data-role="content">
+
+                <label for="alarma">Alarma:</label>
+                <input id="alarma" name="alarma" data-role="flipswitch" data-on-text="Encendida" data-off-text="Apagada" data-wrapper-class="custom-size-flipswitch" type="checkbox" class="selector">
+
+
+                <label for="focoDormitorio">Luz de la cocina:</label>
+                <input id="focoDormitorio" name="focoDormitorio" data-role="flipswitch" data-on-text="Encendida" data-off-text="Apagada" data-wrapper-class="custom-size-flipswitch" type="checkbox" class="selector">
+
+                <label for="focoCocina">Luz del dormitorio:</label>
+                <input id="focoCocina" name="focoCocina" data-role="flipswitch" data-on-text="Encendida" data-off-text="Apagada" data-wrapper-class="custom-size-flipswitch" type="checkbox" class="selector">
+
+
+
+                <label for="puerta">Puerta:</label>
+                <input id="puerta" name="puerta" data-role="flipswitch" data-on-text="Abierta" data-off-text="Cerrada" data-wrapper-class="custom-size-flipswitch" type="checkbox" disabled="disabled" >
+
+
+                <label for="ventanaCocina">Ventana de la cocina:</label>
+                <input id="ventanaCocina" name="ventanaCocina" data-role="flipswitch" data-on-text="Abierta" data-off-text="Cerrada" data-wrapper-class="custom-size-flipswitch" type="checkbox" disabled="disabled">
+
+                <label for="ventanaDormitorio">Ventana del dormitorio:</label>
+                <input id="ventanaDormitorio" name="ventanaDormitorio" data-role="flipswitch" data-on-text="Abierta" data-off-text="Cerrada" data-wrapper-class="custom-size-flipswitch" type="checkbox" disabled="disabled">
+
+            
+         </div>
+  </div>
+  </body>
+</html>
