@@ -1,0 +1,11 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"P1";"B4B-XH-A";1;"CONN_4";;;
+2;"Q1,Q2";"TO92-123";2;"BC547";;;
+3;"RLY2,RLY1";"relay_SRD";2;"RELAY_SRD";;;
+4;"D4,D3,D2";"LED-5MM";3;"LED";;;
+5;"D5,D1";"diode_do35";2;"1N4148";;;
+6;"P2,P3,P5";"hole_3mm";3;"TST";;;
+7;"P4";"PLACA";1;"TST";;;
+8;"R1,R4";"SM0805LarguePads";2;"1K";;;
+9;"R5,R2,R3";"SM0805LarguePads";3;"120";;;
+10;"K1,K2";"mstbva_2,5/3-g-5,08";2;"CONN_3";;;

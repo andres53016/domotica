@@ -1,0 +1,150 @@
+Cmp-Mod V01 Created by CvPcb (2013-may-18)-stable date = vie 28 mar 2014 21:22:08 ART
+
+BeginCmp
+TimeStamp = /52362D2B;
+Reference = D1;
+ValeurCmp = 1N4148;
+IdModule  = diode_do35;
+EndCmp
+
+BeginCmp
+TimeStamp = /523636CE;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /52363740;
+Reference = D3;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CAC8;
+Reference = D4;
+ValeurCmp = LED;
+IdModule  = LED-5MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CAA7;
+Reference = D5;
+ValeurCmp = 1N4148;
+IdModule  = diode_do35;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CAE1;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = mstbva_2,5/3-g-5,08;
+EndCmp
+
+BeginCmp
+TimeStamp = /523661E1;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = mstbva_2,5/3-g-5,08;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CA3D;
+Reference = P1;
+ValeurCmp = CONN_4;
+IdModule  = B4B-XH-A;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A61B6C;
+Reference = P2;
+ValeurCmp = TST;
+IdModule  = hole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A61B7B;
+Reference = P3;
+ValeurCmp = TST;
+IdModule  = hole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A61C56;
+Reference = P4;
+ValeurCmp = TST;
+IdModule  = PLACA;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A61C8A;
+Reference = P5;
+ValeurCmp = TST;
+IdModule  = hole_3mm;
+EndCmp
+
+BeginCmp
+TimeStamp = /523629EF;
+Reference = Q1;
+ValeurCmp = BC547;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CAA1;
+Reference = Q2;
+ValeurCmp = BC547;
+IdModule  = TO92-123;
+EndCmp
+
+BeginCmp
+TimeStamp = /52362D3A;
+Reference = R1;
+ValeurCmp = 1K;
+IdModule  = SM0805LarguePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /52363759;
+Reference = R2;
+ValeurCmp = 120;
+IdModule  = SM0805LarguePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /52364E46;
+Reference = R3;
+ValeurCmp = 120;
+IdModule  = SM0805LarguePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CAAD;
+Reference = R4;
+ValeurCmp = 1K;
+IdModule  = SM0805LarguePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CACE;
+Reference = R5;
+ValeurCmp = 120;
+IdModule  = SM0805LarguePads;
+EndCmp
+
+BeginCmp
+TimeStamp = /52364230;
+Reference = RLY1;
+ValeurCmp = RELAY_SRD;
+IdModule  = relay_SRD;
+EndCmp
+
+BeginCmp
+TimeStamp = /52A5CADA;
+Reference = RLY2;
+ValeurCmp = RELAY_SRD;
+IdModule  = relay_SRD;
+EndCmp
+
+EndListe
